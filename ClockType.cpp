@@ -39,3 +39,13 @@ void ClockType::incrementHoursBy(int n)
 {
     this->hrs =(this->hrs + n)%24;
 }
+void  ClockType::displayCurrentTime()
+{
+    cout << getCurrentTime() <<endl;
+}
+void ClockType::setTime(int hh, int mm, int ss )
+{
+    this->hrs = hh;
+    this->mins = mm;
+    this->sec =ss;
+}

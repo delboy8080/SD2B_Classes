@@ -17,7 +17,8 @@ public:
     void incrementSecondsBy(int n);
     void incrementMinutesBy(int n);
     void incrementHoursBy(int n);
-
+    void setTime(int hh, int mm, int ss );
+    void displayCurrentTime();
     string getCurrentTime( );
 
 
