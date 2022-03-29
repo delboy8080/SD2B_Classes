@@ -17,10 +17,10 @@ public:
     Student();
     Student(int id, string name, int age, double height);
 
-    int getId();
-    string getName();
-    int getAge();
-    double getHeight();
+    int getId() const;
+    string getName() const;
+    int getAge() const;
+    double getHeight() const;
 
     void setId(int id);
     void setName(string name);

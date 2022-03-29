@@ -3,4 +3,4 @@ project(SD2B_Classes)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SD2B_Classes main.cpp Student.h Student.cpp)
+add_executable(SD2B_Classes main.cpp Student.h Student.cpp ClockType.h ClockType.cpp)

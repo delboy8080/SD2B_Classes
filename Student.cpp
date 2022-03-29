@@ -18,19 +18,19 @@ Student::Student(int id, string name, int age, double height)
     this->height= height;
 }
 
-int Student::getId()
+int Student::getId() const
 {
     return this->id;
 }
-string Student::getName()
+string Student::getName() const
 {
-    return this->name;
+     return this->name;
 }
-int Student::getAge()
+int Student::getAge() const
 {
     return this->age;
 }
-double Student::getHeight()
+double Student::getHeight() const
 {
     return this->height;
 }
