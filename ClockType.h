@@ -20,6 +20,8 @@ public:
     void setTime(int hh, int mm, int ss );
     void displayCurrentTime();
     string getCurrentTime( );
+    void reset();
+    int elapsedTime();
 
 
 };

@@ -43,6 +43,14 @@ void  ClockType::displayCurrentTime()
 {
     cout << getCurrentTime() <<endl;
 }
+int ClockType::elapsedTime()
+{
+    return (hrs * 3600) + (mins*60)+sec;
+}
+void ClockType::reset()
+{
+    hrs = mins = sec = 0;
+}
 void ClockType::setTime(int hh, int mm, int ss )
 {
     this->hrs = hh;
