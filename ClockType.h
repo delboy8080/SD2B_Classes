@@ -22,6 +22,8 @@ public:
     string getCurrentTime( );
     void reset();
     int elapsedTime();
+    int remainingTime();
+    void outputDifference(ClockType &ct);
 
 
 };

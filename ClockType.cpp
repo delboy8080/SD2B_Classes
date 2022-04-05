@@ -43,6 +43,20 @@ void  ClockType::displayCurrentTime()
 {
     cout << getCurrentTime() <<endl;
 }
+int ClockType::remainingTime()
+{
+    return (24*3600)-elapsedTime();
+}
+void ClockType::outputDifference
+(ClockType &ct)
+{
+    int diff = abs(elapsedTime()
+            -ct.elapsedTime());
+    int h = diff / 3600;
+    int m = (diff%3600)/60;
+    int s = diff%60;
+    cout << h<<":"<<m<<":"<<s<<endl;
+}
 int ClockType::elapsedTime()
 {
     return (hrs * 3600) + (mins*60)+sec;
